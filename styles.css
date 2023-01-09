@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("Lato-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url("Lato-Bold.ttf") format('truetype');
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+  color: #0f2e93;
+}
+
+.inline {
+  display: inline;
+}
