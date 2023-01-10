@@ -30,17 +30,6 @@
   background-color: #88c946;
 }
 
-.no-margin {
-  margin: 0;
-}
-
-.nav-tile {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
 .w-14 {
   width: 14%;
 }
@@ -51,6 +40,17 @@
 
 .f0 {
   font-size: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.nav-tile {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .social-media-logo {
