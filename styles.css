@@ -30,6 +30,10 @@
   background-color: #88c946;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .nav-tile {
   list-style-type: none;
   margin: 0;
