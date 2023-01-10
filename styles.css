@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Lato';
-  src: url("Lato-Regular.ttf") format('truetype');
+  src: url("assets/Lato-Regular.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Lato Bold';
-  src: url("Lato-Bold.ttf") format('truetype');
+  src: url("assets/Lato-Bold.ttf") format('truetype');
 }
 
 .lato {
@@ -13,6 +13,43 @@
   color: #0f2e93;
 }
 
-.inline {
-  display: inline;
+.lato-bold {
+  font-family: "Lato Bold", sans-serif;
+  color: #0f2e93;
+}
+
+.bg-blue-fr {
+  background-color: #0f2e93;
+}
+
+.bg-light-blue-fr {
+  background-color: #74bdd0;
+}
+
+.hover-bg-green-fr:hover {
+  background-color: #88c946;
+}
+
+.nav-tile {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.w-14 {
+  width: 14%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.f0 {
+  font-size: 0;
+}
+
+.social-media-logo {
+  max-width: 36px;
+  max-height: 36px;
 }
