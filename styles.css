@@ -10,12 +10,22 @@
 
 .lato {
   font-family: "Lato", sans-serif;
-  color: #0f2e93;
 }
 
 .lato-bold {
   font-family: "Lato Bold", sans-serif;
+}
+
+.gray-fr {
+  color: #717277;
+}
+
+.blue-fr {
   color: #0f2e93;
+}
+
+.green-fr {
+  color: #41bb49;
 }
 
 .bg-blue-fr {
@@ -24,6 +34,10 @@
 
 .bg-light-blue-fr {
   background-color: #74bdd0;
+}
+
+.bg-gradient-fr {
+  background: linear-gradient(0deg, #88c946, #127bc0);
 }
 
 .hover-bg-green-fr:hover {
@@ -42,18 +56,16 @@
   font-size: 0;
 }
 
-.no-margin {
+.nm {
   margin: 0;
-}
-
-.nav-tile {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
 }
 
 .social-media-logo {
   max-width: 36px;
   max-height: 36px;
+}
+
+#hero {
+  background-image: url("assets/hero.png");
+  background-size: cover;
 }
