@@ -36,6 +36,10 @@
   background-color: #74bdd0;
 }
 
+.bg-light-gray-fr {
+  background-color: #f5f6f6;
+}
+
 .bg-gradient-fr {
   background: linear-gradient(0deg, #88c946, #127bc0);
 }
@@ -50,6 +54,10 @@
 
 .w-15 {
   width: 15%;
+}
+
+.f2-fr {
+  font-size: 1.85rem;
 }
 
 .f0 {
