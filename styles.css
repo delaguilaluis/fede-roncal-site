@@ -8,12 +8,21 @@
   src: url("assets/Lato-Bold.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'Satisfy';
+  src: url("assets/Satisfy-Regular.ttf") format('truetype');
+}
+
 .lato {
   font-family: "Lato", sans-serif;
 }
 
 .lato-bold {
   font-family: "Lato Bold", sans-serif;
+}
+
+.satisfy {
+  font-family: "Satisfy", serif;
 }
 
 .gray-fr {
@@ -33,7 +42,7 @@
 }
 
 .bg-light-blue-fr {
-  background-color: #74bdd0;
+  background-color: #88b8cf;
 }
 
 .bg-light-gray-fr {
@@ -63,11 +72,6 @@
 .icon {
   max-width: 36px;
   max-height: 36px;
-}
-
-#hero {
-  background-image: url("assets/hero.png");
-  background-size: cover;
 }
 
 @media screen and (min-width:30em) {
