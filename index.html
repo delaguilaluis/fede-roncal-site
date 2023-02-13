@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="assets/tachyons.min.css">
   <title>Fede Roncal - Psicólogo Clínico</title>
+  <script>
+    function handleReadMore() {
+      const aboutFede = document.querySelector('#about-fede')
+      aboutFede && aboutFede.classList.toggle('dn')
+
+      const readMore = document.querySelector('#read-more')
+      if (aboutFede.classList.contains('dn')) {
+        readMore.innerHTML = 'Leer más'
+      } else {
+        readMore.innerHTML = 'Ocultar'
+      }
+    }
+  </script>
 </head>
 
 <body class="lato gray-fr">
@@ -91,47 +104,58 @@
       <h2 class="nm pt4 pr6 tr lato-bold blue-fr f2">Atención de personas adultas, adolescentes y parejas.</h2>
     </div>
   </div>
-  <div id="about" class="w-100 dib pt5 pb4 ph6">
-    <h1 class="nm mb4 f2 blue-fr">sobre mí</h1>
-    <div class="fl w-20 tr">
+  <div id="about" class="w-100 dib pt5 pb4 ph5">
+    <h1 class="nm mb4 tc tl-ns f2 blue-fr">sobre mí</h1>
+    <div class="fl w-25-ns tr">
       <div class="ph1 pt1 br-100 w5 bg-gradient-fr">
         <img src="assets/fede.jpg" class="br-100" alt="avatar">
       </div>
     </div>
-    <div class="fl w-80">
-      <h1 class="nm mb2 green-fr">Federico Roncal</h1>
+    <div class="fl w-75-ns tc tl-ns">
+      <h1 id="federico-roncal" class="nm mb2 green-fr">Federico Roncal</h1>
       <h2 class="nm green-fr mb2">Psicólogo Clínico</h2>
-      <div class="fl w-50 pr3 f4">
-        <p>Soy una persona que considera que independientemente de lo que haya ido mal en nuestras
-          vidas, de lo oscuro que haya sido el camino, de lo desoladora que haya sido la experiencia; todas las personas
-          tenemos la capacidad de sanar, cambiar y crecer. Disfruto acompañando a las personas en estos procesos.
-        </p>
-        <p>
-          Soy hijo de migrantes y desde pequeño desarrollé un gusto especial por la naturaleza, tuve la suerte de
-          participar varios años en el movimiento scout, lo que marcó mi infancia y adolescencia. Mi familia y mi
-          educación escolar me animaron a interesarme en acompañar a otros seres humanos en momentos difíciles. Por eso,
-          he dedicado gran parte de mi vida a la mejora de la educación y al trabajo con grupos vulnerados.
-        </p>
-        <p>
-          Tengo seis hijos, un perrito, una gatita y una compañera de vida. Resido en la ciudad de Guatemala. Me encanta
-          compartir con la familia y con los amigos. Mi camino como practicante del budismo Zen (meditación no
-          religiosa) ha sido muy valioso e importante en mi vida.
-        </p>
+      <div id="about-fede" class="dn dib-ns">
+        <div class="fl w-50-ns pr3-ns tl f4">
+          <p>Soy una persona que considera que independientemente de lo que haya ido mal en nuestras
+            vidas, de lo oscuro que haya sido el camino, de lo desoladora que haya sido la experiencia; todas las
+            personas
+            tenemos la capacidad de sanar, cambiar y crecer. Disfruto acompañando a las personas en estos procesos.
+          </p>
+          <p>
+            Soy hijo de migrantes y desde pequeño desarrollé un gusto especial por la naturaleza, tuve la suerte de
+            participar varios años en el movimiento scout, lo que marcó mi infancia y adolescencia. Mi familia y mi
+            educación escolar me animaron a interesarme en acompañar a otros seres humanos en momentos difíciles. Por
+            eso,
+            he dedicado gran parte de mi vida a la mejora de la educación y al trabajo con grupos vulnerados.
+          </p>
+          <p>
+            Tengo seis hijos, un perrito, una gatita y una compañera de vida. Resido en la ciudad de Guatemala. Me
+            encanta
+            compartir con la familia y con los amigos. Mi camino como practicante del budismo Zen (meditación no
+            religiosa) ha sido muy valioso e importante en mi vida.
+          </p>
+        </div>
+        <div class="fl w-50-ns pl3-ns tl f4">
+          <p>
+            Me apasiona leer y aprender, por eso he estudiado varias cosas a lo largo de mi vida: dos licenciaturas, una
+            en psicología clínica y otra en educación intercultural; tres especializaciones: una en mediación
+            pedagógica,
+            otra como director de psicodrama (es una metodología muy efectiva para trabajar la salud mental con grupos)
+            y
+            otra en psicoterapia cognitivo conductual integrativa. Además, tengo un doctorado en educación.
+          </p>
+          <p>
+            Considero que la terapia psicológica es una herramienta fundamental para ser y vivir mejor. Valoro la
+            experiencia acumulada por las personas, por ese motivo fundamento mi trabajo en enfoques basados en
+            evidencia;
+            es decir, corrientes, técnicas y métodos que han demostrado, luego de años de investigación rigurosa, que sí
+            funcionan y que son efectivos para atender determinados problemas y ayudar a las personas a crecer.
+          </p>
+        </div>
       </div>
-      <div class="fl w-50 pl3 f4">
-        <p>
-          Me apasiona leer y aprender, por eso he estudiado varias cosas a lo largo de mi vida: dos licenciaturas, una
-          en psicología clínica y otra en educación intercultural; tres especializaciones: una en mediación pedagógica,
-          otra como director de psicodrama (es una metodología muy efectiva para trabajar la salud mental con grupos) y
-          otra en psicoterapia cognitivo conductual integrativa. Además, tengo un doctorado en educación.
-        </p>
-        <p>
-          Considero que la terapia psicológica es una herramienta fundamental para ser y vivir mejor. Valoro la
-          experiencia acumulada por las personas, por ese motivo fundamento mi trabajo en enfoques basados en evidencia;
-          es decir, corrientes, técnicas y métodos que han demostrado, luego de años de investigación rigurosa, que sí
-          funcionan y que son efectivos para atender determinados problemas y ayudar a las personas a crecer.
-        </p>
-      </div>
+    </div>
+    <div class="tc dn-ns db">
+      <a id="read-more" class="link dim ph3 pv2 dib f4 white bg-blue-fr" href="#federico-roncal" onclick="handleReadMore()">Leer más</a>
     </div>
   </div>
   <div id="services" class="w-100 dib ph6 pb4">
