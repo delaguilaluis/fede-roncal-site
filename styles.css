@@ -74,6 +74,10 @@
   max-height: 36px;
 }
 
+.w-three-quarters {
+  width: 0.75rem;
+}
+
 @media screen and (min-width:30em) {
   .w-14-ns {
     width: 14% !important;
