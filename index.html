@@ -8,19 +8,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="assets/tachyons.min.css">
   <title>Fede Roncal - Psicólogo Clínico</title>
-  <script>
-    function handleReadMore() {
-      const aboutFede = document.querySelector('#about-fede')
-      aboutFede && aboutFede.classList.toggle('dn')
-
-      const readMore = document.querySelector('#read-more')
-      if (aboutFede.classList.contains('dn')) {
-        readMore.innerHTML = 'Leer más'
-      } else {
-        readMore.innerHTML = 'Ocultar'
-      }
-    }
-  </script>
 </head>
 
 <body class="lato gray-fr" onload="setUp()">
@@ -41,7 +28,6 @@
           </div>
         </a>
       </div>
-    </div>
     </div>
     <div class="fl w-50 w-third-ns pb1 pv4-m pv5-l pl0-ns pl3">
       <img class="pt4-ns" src="assets/logo.png">
@@ -117,55 +103,53 @@
         <img src="assets/fede.jpg" class="br-100" alt="avatar">
       </div>
     </div>
-    <div class="dib fl-l w-85-m w-75-l pl2-l tc tl-l">
+    <div class="db fl-l w-85-m w-75-l tc tl-l">
       <h1 id="federico-roncal" class="nm mb2 mh3-l green-fr">Federico Roncal</h1>
       <h2 class="nm green-fr mb2 mh3-l">Psicólogo Clínico</h2>
-      <div id="about-fede" class="dn dib-ns">
-        <div class="center fl-l w-50-l ph3 ph5-m pr0-l tl f4">
-          <p>Soy una persona que considera que independientemente de lo que haya ido mal en nuestras
-            vidas, de lo oscuro que haya sido el camino, de lo desoladora que haya sido la experiencia; todas las
-            personas
-            tenemos la capacidad de sanar, cambiar y crecer. Disfruto acompañando a las personas en estos procesos.
-          </p>
-          <p>
-            Soy hijo de migrantes y desde pequeño desarrollé un gusto especial por la naturaleza, tuve la suerte de
-            participar varios años en el movimiento scout, lo que marcó mi infancia y adolescencia. Mi familia y mi
-            educación escolar me animaron a interesarme en acompañar a otros seres humanos en momentos difíciles. Por
-            eso,
-            he dedicado gran parte de mi vida a la mejora de la educación y al trabajo con grupos vulnerados.
-          </p>
-          <p>
-            Tengo seis hijos, un perrito, una gatita y una compañera de vida. Resido en la ciudad de Guatemala. Me
-            encanta
-            compartir con la familia y con los amigos. Mi camino como practicante del budismo Zen (meditación no
-            religiosa) ha sido muy valioso e importante en mi vida.
-          </p>
-        </div>
-        <div class="center fl-l w-50-l ph3 ph5-m pr0-l tl f4">
-          <p>
-            Me apasiona leer y aprender, por eso he estudiado varias cosas a lo largo de mi vida: dos licenciaturas,
-            una
-            en psicología clínica y otra en educación intercultural; tres especializaciones: una en mediación
-            pedagógica,
-            otra como director de psicodrama (es una metodología muy efectiva para trabajar la salud mental con
-            grupos)
-            y
-            otra en psicoterapia cognitivo conductual integrativa. Además, tengo un doctorado en educación.
-          </p>
-          <p>
-            Considero que la terapia psicológica es una herramienta fundamental para ser y vivir mejor. Valoro la
-            experiencia acumulada por las personas, por ese motivo fundamento mi trabajo en enfoques basados en
-            evidencia;
-            es decir, corrientes, técnicas y métodos que han demostrado, luego de años de investigación rigurosa, que
-            sí
-            funcionan y que son efectivos para atender determinados problemas y ayudar a las personas a crecer.
-          </p>
-        </div>
-      </div>
     </div>
-    <div class="tc dn-ns db">
-      <a id="read-more" class="link dim ph3 pv2 dib f4 white bg-blue-fr" href="#federico-roncal"
-        onclick="handleReadMore()">Leer más</a>
+    <input class="dn" type="checkbox" id="read-more">
+    <label class="accordion tc link dn-ns dib w-90 nm pv1 f3 white bg-blue-fr" for="read-more">Leer más</label>
+    <div id="about-fede" class="panel fl-l dn dib-ns w-85-m w-75-l">
+      <div class="center fl-l w-50-l ph4 ph5-m pl3-l pr0-l tl f4">
+        <p>Soy una persona que considera que independientemente de lo que haya ido mal en nuestras
+          vidas, de lo oscuro que haya sido el camino, de lo desoladora que haya sido la experiencia; todas las
+          personas
+          tenemos la capacidad de sanar, cambiar y crecer. Disfruto acompañando a las personas en estos procesos.
+        </p>
+        <p>
+          Soy hijo de migrantes y desde pequeño desarrollé un gusto especial por la naturaleza, tuve la suerte de
+          participar varios años en el movimiento scout, lo que marcó mi infancia y adolescencia. Mi familia y mi
+          educación escolar me animaron a interesarme en acompañar a otros seres humanos en momentos difíciles. Por
+          eso,
+          he dedicado gran parte de mi vida a la mejora de la educación y al trabajo con grupos vulnerados.
+        </p>
+        <p>
+          Tengo seis hijos, un perrito, una gatita y una compañera de vida. Resido en la ciudad de Guatemala. Me
+          encanta
+          compartir con la familia y con los amigos. Mi camino como practicante del budismo Zen (meditación no
+          religiosa) ha sido muy valioso e importante en mi vida.
+        </p>
+      </div>
+      <div class="center fl-l w-50-l ph4 ph5-m pl3-l pr0-l tl f4">
+        <p>
+          Me apasiona leer y aprender, por eso he estudiado varias cosas a lo largo de mi vida: dos licenciaturas,
+          una
+          en psicología clínica y otra en educación intercultural; tres especializaciones: una en mediación
+          pedagógica,
+          otra como director de psicodrama (es una metodología muy efectiva para trabajar la salud mental con
+          grupos)
+          y
+          otra en psicoterapia cognitivo conductual integrativa. Además, tengo un doctorado en educación.
+        </p>
+        <p>
+          Considero que la terapia psicológica es una herramienta fundamental para ser y vivir mejor. Valoro la
+          experiencia acumulada por las personas, por ese motivo fundamento mi trabajo en enfoques basados en
+          evidencia;
+          es decir, corrientes, técnicas y métodos que han demostrado, luego de años de investigación rigurosa, que
+          sí
+          funcionan y que son efectivos para atender determinados problemas y ayudar a las personas a crecer.
+        </p>
+      </div>
     </div>
   </div>
   <div id="services" class="w-100 dib pt3 pb3 ph6-l tc tl-l br bb bl bw4 bw0-ns b--black-05">
@@ -226,8 +210,6 @@
       </div>
     </div>
   </div>
-  </div>
-  </div>
   <div id="faq" class="w-100 dib ph6 pb4">
     <h1 class="nm mb4 f2 blue-fr">preguntas frecuentes</h1>
     <div class="w-50 mb3">
@@ -241,59 +223,58 @@
           síntomas específicos o sanar heridas de la infancia. Las sesiones son una vez por semana (a menos que se
           necesiten más sesiones durante algunas semanas). Duran 50 minutos las sesiones individuales y
           las de pareja o familiares 90 minutos.</p>
+      </details>
     </div>
-    </details>
-  </div>
-  <div class="w-50 mb3">
-    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-    <h2 class="nm di f2-fr">¿En qué consiste la terapia?</h2>
-    <details class="mt2">
-      <summary>Respuesta</summary>
-      <p class="f4">¿En qué consiste la terapia?
-        Se trata de un espacio seguro para conversar y explorar a nivel interno lo que estás sintiendo, pensando o
-        viviendo, a fin de comprender mejor tu experiencia y aprender habilidades o estrategias para hacer los cambios
-        que decidas hacer, en función de tus dificultades, tus valores y tus metas.</p>
-    </details>
-  </div>
-  <div class="w-50 mb3">
-    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-    <h2 class="nm di f2-fr">¿Desde qué enfoque de la psicoterapia trabajo?</h2>
-    <details class="mt2">
-      <summary>Respuesta</summary>
-      <p class="f4">Mi enfoque es integrativo, esto quiere decir que utilizo los conocimientos de distintas corrientes
-        psicológicas como el psicoanálisis, la terapia cognitivo conductual, las terapias de tercera generación (en
-        especial la Terapia Dialéctico Conductual) y el humanismo existencial, para ofrecer a cada persona un
-        acompañamiento acorde a sus dificultades, a sus recursos y a sus metas. Mi enfoque es sensible al trauma, lo
-        que
-        significa que trabajo con especial cuidado las heridas de la infancia. También estoy comprometido con el
-        respeto
-        y valoración de la diversidad cultural y la diversidad sexual.</p>
-    </details>
-  </div>
-  <div class="w-50 mb3">
-    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-    <h2 class="nm di f2-fr">¿Qué tipo de problemas atiendo?</h2>
-    <details class="mt2">
-      <summary>Respuesta</summary>
-      <p class="f4">Atiendo distintos tipos de problemas o trastornos relacionados con el manejo de emociones y
-        sentimientos, como la ansiedad, el miedo o la fobia, el estrés agudo o el estrés postraumático complejo, la
-        depresión, el suicidio y los que se conocen como trastornos de personalidad, que son formas de ser que nos
-        impiden tener la vida que deseamos. También apoyo a las personas a cambiar las conductas que les generan
-        problemas importantes, como pueden ser la agresividad, el aislamiento social, el consumo de sustancias y las
-        relaciones difíciles con la comida.</p>
-    </details>
-  </div>
-  <div class="w-50 mb3">
-    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-    <h2 class="nm di f2-fr">¿Qué se necesita para tener una sesión virtual?</h2>
-    <details class="mt2">
-      <summary>Respuesta</summary>
-      <p class="f4">Es muy importante que tengas un teléfono inteligente o una computadora con cámara, ya que es
-        indispensable trabajar por videollamada. Necesitas una conexión a internet estable, así como un espacio
-        privado y seguro dentro de tu casa u oficina, donde puedas hablar con toda confianza, sin temor a que otras
-        personas te interrumpan o escuchen.</p>
-    </details>
-  </div>
+    <div class="w-50 mb3">
+      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+      <h2 class="nm di f2-fr">¿En qué consiste la terapia?</h2>
+      <details class="mt2">
+        <summary>Respuesta</summary>
+        <p class="f4">¿En qué consiste la terapia?
+          Se trata de un espacio seguro para conversar y explorar a nivel interno lo que estás sintiendo, pensando o
+          viviendo, a fin de comprender mejor tu experiencia y aprender habilidades o estrategias para hacer los cambios
+          que decidas hacer, en función de tus dificultades, tus valores y tus metas.</p>
+      </details>
+    </div>
+    <div class="w-50 mb3">
+      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+      <h2 class="nm di f2-fr">¿Desde qué enfoque de la psicoterapia trabajo?</h2>
+      <details class="mt2">
+        <summary>Respuesta</summary>
+        <p class="f4">Mi enfoque es integrativo, esto quiere decir que utilizo los conocimientos de distintas corrientes
+          psicológicas como el psicoanálisis, la terapia cognitivo conductual, las terapias de tercera generación (en
+          especial la Terapia Dialéctico Conductual) y el humanismo existencial, para ofrecer a cada persona un
+          acompañamiento acorde a sus dificultades, a sus recursos y a sus metas. Mi enfoque es sensible al trauma, lo
+          que
+          significa que trabajo con especial cuidado las heridas de la infancia. También estoy comprometido con el
+          respeto
+          y valoración de la diversidad cultural y la diversidad sexual.</p>
+      </details>
+    </div>
+    <div class="w-50 mb3">
+      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+      <h2 class="nm di f2-fr">¿Qué tipo de problemas atiendo?</h2>
+      <details class="mt2">
+        <summary>Respuesta</summary>
+        <p class="f4">Atiendo distintos tipos de problemas o trastornos relacionados con el manejo de emociones y
+          sentimientos, como la ansiedad, el miedo o la fobia, el estrés agudo o el estrés postraumático complejo, la
+          depresión, el suicidio y los que se conocen como trastornos de personalidad, que son formas de ser que nos
+          impiden tener la vida que deseamos. También apoyo a las personas a cambiar las conductas que les generan
+          problemas importantes, como pueden ser la agresividad, el aislamiento social, el consumo de sustancias y las
+          relaciones difíciles con la comida.</p>
+      </details>
+    </div>
+    <div class="w-50 mb3">
+      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+      <h2 class="nm di f2-fr">¿Qué se necesita para tener una sesión virtual?</h2>
+      <details class="mt2">
+        <summary>Respuesta</summary>
+        <p class="f4">Es muy importante que tengas un teléfono inteligente o una computadora con cámara, ya que es
+          indispensable trabajar por videollamada. Necesitas una conexión a internet estable, así como un espacio
+          privado y seguro dentro de tu casa u oficina, donde puedas hablar con toda confianza, sin temor a que otras
+          personas te interrumpan o escuchen.</p>
+      </details>
+    </div>
   </div>
   <div id="contact-us" class="w-100 dib pv4 tc white bg-blue-fr">
     <div class="dib mv3 mr5">
