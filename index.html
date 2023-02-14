@@ -20,26 +20,10 @@
         readMore.innerHTML = 'Ocultar'
       }
     }
-
-    function setUp() {
-      const accordions = Array.from(document.getElementsByClassName("accordion"))
-      console.log(accordions)
-      accordions.forEach((elem) => {
-        elem.addEventListener("click", function () {
-          this.classList.toggle("active")
-          const panel = this.nextElementSibling
-          if (panel.style.display === "block") {
-            panel.style.display = "none"
-          } else {
-            panel.style.display = "block"
-          }
-        })
-      })
-    }
   </script>
 </head>
 
-<body class="lato gray-fr debug" onload="setUp()">
+<body class="lato gray-fr" onload="setUp()">
   <header id="home" class="dib w-100">
     <div class="fl-ns w-100 w-third-ns pv5-m pv6-l">
       <div class="tc">
@@ -137,7 +121,7 @@
       <h1 id="federico-roncal" class="nm mb2 mh3-l green-fr">Federico Roncal</h1>
       <h2 class="nm green-fr mb2 mh3-l">Psicólogo Clínico</h2>
       <div id="about-fede" class="dn dib-ns">
-        <div class="center fl-l w-80-m w-50-l ph3 pr0-l tl f4">
+        <div class="center fl-l w-50-l ph3 ph5-m pr0-l tl f4">
           <p>Soy una persona que considera que independientemente de lo que haya ido mal en nuestras
             vidas, de lo oscuro que haya sido el camino, de lo desoladora que haya sido la experiencia; todas las
             personas
@@ -157,7 +141,7 @@
             religiosa) ha sido muy valioso e importante en mi vida.
           </p>
         </div>
-        <div class="center fl-l w-80-m w-50-l ph3 pr0-l tl f4">
+        <div class="center fl-l w-50-l ph3 ph5-m pr0-l tl f4">
           <p>
             Me apasiona leer y aprender, por eso he estudiado varias cosas a lo largo de mi vida: dos licenciaturas,
             una
@@ -184,7 +168,7 @@
         onclick="handleReadMore()">Leer más</a>
     </div>
   </div>
-  <div id="services" class="w-100 dib pt3 pb4 ph6-l tc tl-l br bb bl bw4 bw0-ns b--black-05">
+  <div id="services" class="w-100 dib pt3 pb3 ph6-l tc tl-l br bb bl bw4 bw0-ns b--black-05">
     <h1 class="nm mb3 mb4-ns f2 blue-fr">servicios</h1>
     <div class="mb4 tc">
       <h2 class="nm di f4">Evaluación y atención psicológica</h2>
@@ -196,25 +180,25 @@
       <h2 class="nm di f4">Enfoque sensible al trauma y a la diversidad</h2>
     </div>
     <div class="mb4">
-      <div class="fl w-third-l w-100 pa3 mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
-        <button class="accordion">
-          <h1 class="nm white bg-green-fr">Terapia individual</h1>
-        </button>
-        <div class="panel">
-          <p class="tl f4 nm mt2">
+      <div class="fl w-100 w-third-l pb2 pa3-ns mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
+        <input class="dn" type="checkbox" id="services-1">
+        <label class="accordion tc link dib w-90 w-100-ns nm pv1 lato-bold-l f3 f2-m f2-xl white bg-green-fr"
+          for="services-1">Terapia individual</label>
+        <div class="panel dn db-ns pb2">
+          <p class="tl nm mt2 ph4 ph5-m f4">
             Es un espacio para que puedas comprender mejor lo que sientes, lo que piensas y lo que
-            haces; y, a partir de tus valores, puedas aprender habilidades para gestionar mejor la relación contigo
+            haces; y, a part ir de tus valores, puedas aprender habilidades para gestionar mejor la relación contigo
             mismo/a y las relaciones con las demás personas. Además de superar los problemas y sanar las heridas, nos
             enfocamos en tener una vida que valga la pena ser vivida. Este proceso puede ser presencial o virtual.
           </p>
         </div>
       </div>
-      <div class="fl w-third-l w-100 pa3 mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
-        <button class="accordion">
-          <h1 class="nm white bg-green-fr">Terapia de pareja</h1>
-        </button>
-        <div class="panel">
-          <p class="tl f4 nm mt2">
+      <div class="fl w-100 w-third-l pb2 pa3-ns mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
+        <input class="dn" type="checkbox" id="services-2">
+        <label class="accordion tc link dib w-90 w-100-ns nm pv1 lato-bold-l f3 f2-m f2-xl white bg-green-fr"
+          for="services-2">Terapia de pareja</label>
+        <div class="panel dn db-ns pb2">
+          <p class="tl nm mt2 ph4 ph5-m f4">
             Se trata de un proceso que permite explorar, entender mejor y, a veces, reparar la
             relación
             de pareja, para establecer nuevas maneras de vincularnos y convivir mejor. Pienso que la relación de
@@ -227,12 +211,12 @@
         </div>
       </div>
     </div>
-    <div class="fl w-third-l w-100 pa3 mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
-      <button class="accordion">
-        <h1 class="nm white bg-green-fr">Terapia para adolescentes</h1>
-      </button>
-      <div class="panel">
-        <p class="tl f4 nm mt2">
+    <div class="fl w-100 w-third-l pb2 pa3-ns mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
+      <input class="dn" type="checkbox" id="services-3">
+      <label class="accordion tc link dib w-90 w-100-ns nm pv1 lato-bold-l f3 f2-m f2-xl white bg-green-fr"
+        for="services-3">Terapia para adolescente</label>
+      <div class="panel dn db-ns">
+        <p class="tl nm mt2 ph4 ph5-m f4">
           De 12 años en adelante. La adolescencia es una etapa compleja y determinante en la vida de
           las personas, llena de retos y oportunidades. Con un enfoque fresco y dinámico,
           la terapia permite desarrollar habilidades y acompañarte para afrontar mejor cada circunstancia,
