@@ -20,10 +20,26 @@
         readMore.innerHTML = 'Ocultar'
       }
     }
+
+    function setUp() {
+      const accordions = Array.from(document.getElementsByClassName("accordion"))
+      console.log(accordions)
+      accordions.forEach((elem) => {
+        elem.addEventListener("click", function () {
+          this.classList.toggle("active")
+          const panel = this.nextElementSibling
+          if (panel.style.display === "block") {
+            panel.style.display = "none"
+          } else {
+            panel.style.display = "block"
+          }
+        })
+      })
+    }
   </script>
 </head>
 
-<body class="lato gray-fr">
+<body class="lato gray-fr debug" onload="setUp()">
   <header id="home" class="dib w-100">
     <div class="fl-ns w-100 w-third-ns pv5-m pv6-l">
       <div class="tc">
@@ -180,30 +196,53 @@
       <h2 class="nm di f4">Enfoque sensible al trauma y a la diversidad</h2>
     </div>
     <div class="mb4">
-      <div class="fl w-third pa3 br b--white bw4 bg-light-gray-fr tc">
-        <h1 class="nm green-fr">Terapia individual</h1>
-        <p class="f4 nm mt2">Es un espacio para que puedas comprender mejor lo que sientes, lo que piensas y lo que
-          haces; y, a partir de tus valores, puedas aprender habilidades para gestionar mejor la relación contigo
-          mismo/a y las relaciones con las demás personas. Además de superar los problemas y sanar las heridas, nos
-          enfocamos en tener una vida que valga la pena ser vivida. Este proceso puede ser presencial o virtual.</p>
+      <div class="fl w-third-l w-100 pa3 mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
+        <button class="accordion">
+          <h1 class="nm white bg-green-fr">Terapia individual</h1>
+        </button>
+        <div class="panel">
+          <p class="tl f4 nm mt2">
+            Es un espacio para que puedas comprender mejor lo que sientes, lo que piensas y lo que
+            haces; y, a partir de tus valores, puedas aprender habilidades para gestionar mejor la relación contigo
+            mismo/a y las relaciones con las demás personas. Además de superar los problemas y sanar las heridas, nos
+            enfocamos en tener una vida que valga la pena ser vivida. Este proceso puede ser presencial o virtual.
+          </p>
+        </div>
       </div>
-      <div class="fl w-third pa3 br b--white bw4 bg-light-gray-fr tc">
-        <h1 class="nm green-fr">Terapia de pareja</h1>
-        <p class="f4 nm mt2">Se trata de un proceso que permite explorar, entender mejor y, a veces, reparar la relación
-          de pareja, para establecer nuevas maneras de vincularnos y convivir mejor. Pienso que la relación de pareja es
-          muy importante en nuestra vida, por eso estoy convencido de que vale la pena trabajar en lograr que sea fuente
-          de apoyo mutuo y bienestar. Este proceso puede ser presencial o virtual.</p>
+      <div class="fl w-third-l w-100 pa3 mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
+        <button class="accordion">
+          <h1 class="nm white bg-green-fr">Terapia de pareja</h1>
+        </button>
+        <div class="panel">
+          <p class="tl f4 nm mt2">
+            Se trata de un proceso que permite explorar, entender mejor y, a veces, reparar la
+            relación
+            de pareja, para establecer nuevas maneras de vincularnos y convivir mejor. Pienso que la relación de
+            pareja
+            es
+            muy importante en nuestra vida, por eso estoy convencido de que vale la pena trabajar en lograr que sea
+            fuente
+            de apoyo mutuo y bienestar. Este proceso puede ser presencial o virtual.
+          </p>
+        </div>
       </div>
-      <div class="fl w-third pa3 br b--white bw4 bg-light-gray-fr tc">
-        <h1 class="nm green-fr">Terapia para adolescentes</h1>
-        <p class="f4 nm mt2">De 12 años en adelante. La adolescencia es una etapa compleja y determinante en la vida de
-          las personas, llena de
-          retos y oportunidades. Con un enfoque fresco y dinámico, la terapia permite desarrollar habilidades y
-          acompañarte para afrontar mejor cada circunstancia, gestionar tus emociones y actuar según tus valores para
-          alcanzar una vida significativa. Este proceso puede ser presencial o virtual.
+    </div>
+    <div class="fl w-third-l w-100 pa3 mb2-m ba bw2-ns b--white bg-white bg-light-gray-fr-ns">
+      <button class="accordion">
+        <h1 class="nm white bg-green-fr">Terapia para adolescentes</h1>
+      </button>
+      <div class="panel">
+        <p class="tl f4 nm mt2">
+          De 12 años en adelante. La adolescencia es una etapa compleja y determinante en la vida de
+          las personas, llena de retos y oportunidades. Con un enfoque fresco y dinámico,
+          la terapia permite desarrollar habilidades y acompañarte para afrontar mejor cada circunstancia,
+          gestionar tus emociones y actuar según tus valores para alcanzar una vida significativa.
+          Este proceso puede ser presencial o virtual.
         </p>
       </div>
     </div>
+  </div>
+  </div>
   </div>
   <div id="faq" class="w-100 dib ph6 pb4">
     <h1 class="nm mb4 f2 blue-fr">preguntas frecuentes</h1>
@@ -216,60 +255,61 @@
           problemática de cada
           persona o de la pareja misma y de la profundidad a la que cada persona quiera llegar: por ejemplo, mejorar
           síntomas específicos o sanar heridas de la infancia. Las sesiones son una vez por semana (a menos que se
-          necesiten más sesiones durante algunas semanas). Duran 50 minutos las sesiones individuales y las de pareja o
-          familiares 90 minutos.</p>
-      </details>
+          necesiten más sesiones durante algunas semanas). Duran 50 minutos las sesiones individuales y
+          las de pareja o familiares 90 minutos.</p>
     </div>
-    <div class="w-50 mb3">
-      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-      <h2 class="nm di f2-fr">¿En qué consiste la terapia?</h2>
-      <details class="mt2">
-        <summary>Respuesta</summary>
-        <p class="f4">¿En qué consiste la terapia?
-          Se trata de un espacio seguro para conversar y explorar a nivel interno lo que estás sintiendo, pensando o
-          viviendo, a fin de comprender mejor tu experiencia y aprender habilidades o estrategias para hacer los cambios
-          que decidas hacer, en función de tus dificultades, tus valores y tus metas.</p>
-      </details>
-    </div>
-    <div class="w-50 mb3">
-      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-      <h2 class="nm di f2-fr">¿Desde qué enfoque de la psicoterapia trabajo?</h2>
-      <details class="mt2">
-        <summary>Respuesta</summary>
-        <p class="f4">Mi enfoque es integrativo, esto quiere decir que utilizo los conocimientos de distintas corrientes
-          psicológicas como el psicoanálisis, la terapia cognitivo conductual, las terapias de tercera generación (en
-          especial la Terapia Dialéctico Conductual) y el humanismo existencial, para ofrecer a cada persona un
-          acompañamiento acorde a sus dificultades, a sus recursos y a sus metas. Mi enfoque es sensible al trauma, lo
-          que
-          significa que trabajo con especial cuidado las heridas de la infancia. También estoy comprometido con el
-          respeto
-          y valoración de la diversidad cultural y la diversidad sexual.</p>
-      </details>
-    </div>
-    <div class="w-50 mb3">
-      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-      <h2 class="nm di f2-fr">¿Qué tipo de problemas atiendo?</h2>
-      <details class="mt2">
-        <summary>Respuesta</summary>
-        <p class="f4">Atiendo distintos tipos de problemas o trastornos relacionados con el manejo de emociones y
-          sentimientos, como la ansiedad, el miedo o la fobia, el estrés agudo o el estrés postraumático complejo, la
-          depresión, el suicidio y los que se conocen como trastornos de personalidad, que son formas de ser que nos
-          impiden tener la vida que deseamos. También apoyo a las personas a cambiar las conductas que les generan
-          problemas importantes, como pueden ser la agresividad, el aislamiento social, el consumo de sustancias y las
-          relaciones difíciles con la comida.</p>
-      </details>
-    </div>
-    <div class="w-50 mb3">
-      <h2 class="nm di mh1 f2-fr green-fr">•</h2>
-      <h2 class="nm di f2-fr">¿Qué se necesita para tener una sesión virtual?</h2>
-      <details class="mt2">
-        <summary>Respuesta</summary>
-        <p class="f4">Es muy importante que tengas un teléfono inteligente o una computadora con cámara, ya que es
-          indispensable trabajar por videollamada. Necesitas una conexión a internet estable, así como un espacio
-          privado y seguro dentro de tu casa u oficina, donde puedas hablar con toda confianza, sin temor a que otras
-          personas te interrumpan o escuchen.</p>
-      </details>
-    </div>
+    </details>
+  </div>
+  <div class="w-50 mb3">
+    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+    <h2 class="nm di f2-fr">¿En qué consiste la terapia?</h2>
+    <details class="mt2">
+      <summary>Respuesta</summary>
+      <p class="f4">¿En qué consiste la terapia?
+        Se trata de un espacio seguro para conversar y explorar a nivel interno lo que estás sintiendo, pensando o
+        viviendo, a fin de comprender mejor tu experiencia y aprender habilidades o estrategias para hacer los cambios
+        que decidas hacer, en función de tus dificultades, tus valores y tus metas.</p>
+    </details>
+  </div>
+  <div class="w-50 mb3">
+    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+    <h2 class="nm di f2-fr">¿Desde qué enfoque de la psicoterapia trabajo?</h2>
+    <details class="mt2">
+      <summary>Respuesta</summary>
+      <p class="f4">Mi enfoque es integrativo, esto quiere decir que utilizo los conocimientos de distintas corrientes
+        psicológicas como el psicoanálisis, la terapia cognitivo conductual, las terapias de tercera generación (en
+        especial la Terapia Dialéctico Conductual) y el humanismo existencial, para ofrecer a cada persona un
+        acompañamiento acorde a sus dificultades, a sus recursos y a sus metas. Mi enfoque es sensible al trauma, lo
+        que
+        significa que trabajo con especial cuidado las heridas de la infancia. También estoy comprometido con el
+        respeto
+        y valoración de la diversidad cultural y la diversidad sexual.</p>
+    </details>
+  </div>
+  <div class="w-50 mb3">
+    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+    <h2 class="nm di f2-fr">¿Qué tipo de problemas atiendo?</h2>
+    <details class="mt2">
+      <summary>Respuesta</summary>
+      <p class="f4">Atiendo distintos tipos de problemas o trastornos relacionados con el manejo de emociones y
+        sentimientos, como la ansiedad, el miedo o la fobia, el estrés agudo o el estrés postraumático complejo, la
+        depresión, el suicidio y los que se conocen como trastornos de personalidad, que son formas de ser que nos
+        impiden tener la vida que deseamos. También apoyo a las personas a cambiar las conductas que les generan
+        problemas importantes, como pueden ser la agresividad, el aislamiento social, el consumo de sustancias y las
+        relaciones difíciles con la comida.</p>
+    </details>
+  </div>
+  <div class="w-50 mb3">
+    <h2 class="nm di mh1 f2-fr green-fr">•</h2>
+    <h2 class="nm di f2-fr">¿Qué se necesita para tener una sesión virtual?</h2>
+    <details class="mt2">
+      <summary>Respuesta</summary>
+      <p class="f4">Es muy importante que tengas un teléfono inteligente o una computadora con cámara, ya que es
+        indispensable trabajar por videollamada. Necesitas una conexión a internet estable, así como un espacio
+        privado y seguro dentro de tu casa u oficina, donde puedas hablar con toda confianza, sin temor a que otras
+        personas te interrumpan o escuchen.</p>
+    </details>
+  </div>
   </div>
   <div id="contact-us" class="w-100 dib pv4 tc white bg-blue-fr">
     <div class="dib mv3 mr5">

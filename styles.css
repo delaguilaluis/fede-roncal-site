@@ -53,6 +53,10 @@
   background: linear-gradient(0deg, #88c946, #127bc0);
 }
 
+.bg-green-fr {
+  background-color: #41bb49;
+}
+
 .hover-bg-green-fr:hover {
   background-color: #88c946;
 }
@@ -78,6 +82,29 @@
   width: 0.75rem;
 }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 @media screen and (min-width:30em) {
   .w-14-ns {
     width: 14% !important;
@@ -85,6 +112,14 @@
 
   .w-15-ns {
     width: 15% !important;
+  }
+
+  .bg-light-gray-fr-ns {
+    background-color: #f5f6f6 !important;
+  }
+
+  .green-fr-ns {
+    color: #41bb49 !important;
   }
 }
 
