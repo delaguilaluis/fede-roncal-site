@@ -83,13 +83,13 @@
 }
 
 .accordion::after {
-  content: '+';
+  content: '\2BC8';
   float: right;
   margin-right: 0.5rem;
 }
 
 :checked+.accordion::after {
-  content: '-';
+  content: '\2BC6';
   float: right;
   margin-right: 0.5rem;
 }
