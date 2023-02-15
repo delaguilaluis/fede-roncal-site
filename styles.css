@@ -79,15 +79,15 @@
 }
 
 .accordion::after {
-  content: '\2BC8';
+  content: '\25B8';
   float: right;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 :checked+.accordion::after {
-  content: '\2BC6';
+  content: '\25BE';
   float: right;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 :checked~.panel {
