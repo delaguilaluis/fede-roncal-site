@@ -278,11 +278,23 @@
   </div>
   <div id="appointment" class="w-100 dib pv4 pl5-m ph6-l tc tl-l br bb bl bw4 bw0-ns b--white-90 bg-light-green-fr">
     <h2 class="nm mb4 tl-ns f2 white">Haz tu cita</h2>
-    <input class="db center mb2 w-80 w-50-m w-30-l" type="text" placeholder="Nombre">
-    <input class="db center mb2 w-80 w-50-m w-30-l" type="text" placeholder="Teléfono">
-    <input class="db center mb2 w-80 w-50-m w-30-l" type="text" placeholder="País/Ciudad">
-    <input type="submit" value="Enviar"
-      class="input-reset db center ba b--dark-blue dim nm pv1 ph4 tc f3 white bg-blue-fr">
+    <form action="https://formsubmit.co/federoncal.psic@gmail.com" method="POST">
+      <input class="db center mb2 w-80 w-50-m w-30-l" type="text" name="nombre" placeholder="Nombre" required>
+      <input class="db center mb2 w-80 w-50-m w-30-l" type="tel" name="tel" placeholder="Teléfono">
+      <input class="db center mb2 w-80 w-50-m w-30-l" type="email" name="email" placeholder="Email" required>
+      <input class="db center mb2 w-80 w-50-m w-30-l" type="text" name="lugar" placeholder="País/Ciudad" required>
+      <select class="db center mb2 pv1 w-80 w-50-m w-30-l ba b--black-40 bg-white gray-fr black" name="tipo" required>
+        <option value="">--Selecciona el tipo de cita--</option>
+        <option value="Terapia individual">Terapia individual</option>
+        <option value="Terapia de pareja">Terapia de pareja</option>
+        <option value="Terapia para adolescente">Terapia para adolescente</option>
+      </select>
+      <input type="hidden" name="_next" value="https://federoncal.com">
+      <input type="hidden" name="_subject" value="Solicitud de cita en federoncal.com">
+      <input type="hidden" name="_autoresponse" value="Hemos recibido tu solicitud de cita. Pronto te contactaremos.">
+      <input type="submit" value="Enviar"
+        class="input-reset db center ba b--dark-blue nm pv1 ph4 tc f3 white bg-blue-fr">
+    </form>
   </div>
   <div id="contact-us" class="w-100 dib pv3 pv4-ns tc white bg-blue-fr">
     <div class="dib mb2 mv3-ns mr3 mr5-ns">
