@@ -57,7 +57,11 @@
   background-color: #41bb49;
 }
 
-.hover-bg-green-fr:hover {
+.bg-light-green-fr {
+  background-color: #88c946;
+}
+
+.hover-bg-light-green-fr:hover {
   background-color: #88c946;
 }
 
