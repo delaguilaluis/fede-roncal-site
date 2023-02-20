@@ -97,6 +97,7 @@
   background-image: url("assets/stones.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 1rem;
 }
 
 .accordion::after {
@@ -139,11 +140,19 @@
   :checked+.accordion::after {
     display: none;
   }
+
+  .hero {
+    background-position: 2rem;
+  }
 }
 
 @media screen and (min-width:60em) {
   .lato-bold-l {
     font-family: "Lato Bold", sans-serif;
+  }
+
+  .hero {
+    background-position: 3rem;
   }
 }
 
@@ -154,5 +163,9 @@
 
   .f2-xl {
     font-size: 2.25rem !important;
+  }
+
+  .hero {
+    background-position: 4rem;
   }
 }
