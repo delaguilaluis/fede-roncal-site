@@ -9,8 +9,15 @@
 }
 
 @font-face {
-  font-family: 'Satisfy';
-  src: url("assets/Satisfy-Regular.ttf") format('truetype');
+  font-family: 'Kidness Coffee';
+  src: url("assets/Kidness-Coffee.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/Gilroy-Bold.woff') format('woff');
 }
 
 .lato {
@@ -21,8 +28,12 @@
   font-family: "Lato Bold", sans-serif;
 }
 
-.satisfy {
-  font-family: "Satisfy", serif;
+.kidness-coffee {
+  font-family: "Kidness Coffee", serif;
+}
+
+.gilroy {
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
 .gray-fr {
@@ -41,16 +52,12 @@
   background-color: #0f2e93;
 }
 
-.bg-light-blue-fr {
-  background-color: #88b8cf;
-}
-
 .bg-light-gray-fr {
   background-color: #f5f6f6;
 }
 
 .bg-gradient-fr {
-  background: linear-gradient(0deg, #88c946, #127bc0);
+  background: linear-gradient(#127bc0, #88c946);
 }
 
 .bg-green-fr {
@@ -80,6 +87,16 @@
 
 .w-three-quarters {
   width: 0.75rem;
+}
+
+.hero-bg {
+  background: linear-gradient(#dfe5d7, #2c649f 40% 60%, #dfe5d7);
+}
+
+.hero {
+  background-image: url("assets/stones.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .accordion::after {
