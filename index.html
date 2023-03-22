@@ -51,7 +51,7 @@
       return fetch(url, options)
         .then((res) => res.json())
         .then((res) => {
-          if (res.found) {
+          if (res.found && res.found > 2) {
             const thumbnails = res.posts.map(createBlogThumbnail)
             const blog = document.querySelector('#blog')
             thumbnails.forEach((thumbnail) => blog.appendChild(thumbnail))
@@ -65,7 +65,7 @@
   </script>
 </head>
 
-<body class="lato gray-fr">
+<body class="lato gray-fr" onload="main()">
   <header id="home" class="dib w-100">
     <div class="fl-ns w-100 w-third-ns pv5-m pv6-l">
       <div class="tc">
